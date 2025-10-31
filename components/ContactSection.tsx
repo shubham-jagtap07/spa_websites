@@ -69,19 +69,15 @@ export default function ContactSection() {
               <h3 className="text-3xl font-bold text-white mb-6">Visit Us</h3>
               <div className="space-y-6 text-gray-300">
                 <div>
-                  <h4 className="text-teal-400 font-semibold mb-2">NIBM Road Location</h4>
-                  <p>📍 Kalyani Nagar, Pune</p>
-                  <p>📞 +91 83900 67667</p>
-                  <p>📞 +91 92091 90006</p>
+                  <h4 className="text-teal-400 font-semibold mb-2">Our Location</h4>
+                  <p>📍 Near KFC & Pizza Hut</p>
+                  <p>Infront of Sahyog Society</p>
+                  <p>Baramati 413102</p>
                 </div>
                 <div>
-                  <h4 className="text-teal-400 font-semibold mb-2">Balewadi Location</h4>
-                  <p>📍 Balewadi, Pune</p>
-                  <p>📞 +91 91758 11045</p>
-                </div>
-                <div>
-                  <h4 className="text-teal-400 font-semibold mb-2">Email</h4>
-                  <p>✉️ info@bansabaiwellnessspa.com</p>
+                  <h4 className="text-teal-400 font-semibold mb-2">Contact</h4>
+                  <p>📞 +91 96042 91428</p>
+                  <p>✉️ evafamilyspa@gmail.com</p>
                 </div>
               </div>
             </div>

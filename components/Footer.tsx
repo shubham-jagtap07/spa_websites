@@ -9,23 +9,21 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="text-teal-500">
-                <svg className="w-12 h-12" viewBox="0 0 100 100" fill="currentColor">
-                  <path d="M50 10 L60 40 L90 40 L65 60 L75 90 L50 70 L25 90 L35 60 L10 40 L40 40 Z" />
-                </svg>
+                <img src="/images/logo.png" alt="Eva Family Relaxation Spa" className="w-16 h-16 object-contain" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-teal-500">BAN SABAI</h3>
-                <p className="text-xs text-teal-400 tracking-wider">WELLNESS SPA</p>
+                <h3 className="text-2xl font-bold text-teal-500">EVA FAMILY</h3>
+                <p className="text-xs text-teal-400 tracking-wider">RELAXATION SPA</p>
               </div>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Experience ultimate relaxation and rejuvenation at Ban Sabai Wellness Spa. 
+              Experience ultimate relaxation and rejuvenation at Eva Family Relaxation Spa. 
               We offer premium spa services including massage therapy, body treatments, 
               facial care, and wellness packages designed to refresh your mind, body, and soul.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://wa.me/"
+                href="https://wa.me/919604291428"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-teal-600 hover:bg-teal-700 p-3 rounded-full transition"
@@ -34,7 +32,7 @@ export default function Footer() {
                 <FaWhatsapp size={20} />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61571141206103"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-teal-600 hover:bg-teal-700 p-3 rounded-full transition"
@@ -43,7 +41,7 @@ export default function Footer() {
                 <FaFacebook size={20} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/eva_family_relaxation_spa_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-teal-600 hover:bg-teal-700 p-3 rounded-full transition"
@@ -98,27 +96,20 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-teal-500 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-white">NIBM Road</p>
-                  <p className="text-sm">Kalyani Nagar, Pune</p>
-                </div>
-              </li>
-              <li className="flex items-start space-x-3">
-                <FaMapMarkerAlt className="text-teal-500 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-white">Balewadi</p>
-                  <p className="text-sm">Balewadi, Pune</p>
+                  <p className="font-semibold text-white">Baramati</p>
+                  <p className="text-sm">Near KFC & Pizza Hut, Infront of Sahyog Society, Baramati 413102</p>
                 </div>
               </li>
               <li className="flex items-center space-x-3">
                 <FaPhone className="text-teal-500" />
-                <a href="tel:+918390067667" className="hover:text-teal-400 transition">
-                  +91 83900 67667
+                <a href="tel:+919604291428" className="hover:text-teal-400 transition">
+                  +91 96042 91428
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="text-teal-500" />
-                <a href="mailto:info@bansabaiwellnessspa.com" className="hover:text-teal-400 transition">
-                  info@bansabaiwellnessspa.com
+                <a href="mailto:evafamilyspa@gmail.com" className="hover:text-teal-400 transition">
+                  evafamilyspa@gmail.com
                 </a>
               </li>
             </ul>
@@ -128,7 +119,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-            <p>© 2025 Ban Sabai Wellness Spa. All rights reserved.</p>
+            <p>© 2025 EVA FAMILY RELAXATION SPA. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-teal-400 transition">
                 Privacy Policy

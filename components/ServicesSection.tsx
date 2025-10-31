@@ -1,4 +1,9 @@
+'use client';
+
+import { useBookingModal } from './BookingModalProvider';
+
 export default function ServicesSection() {
+  const { openModal } = useBookingModal();
   const packages = [
     {
       category: 'Ban Sabai Rituals',
@@ -120,7 +125,10 @@ export default function ServicesSection() {
                 <p className="text-gray-500 text-xs">{pkg.gst}</p>
               </div>
 
-              <button className="w-full bg-gray-800 hover:bg-teal-600 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group">
+              <button 
+                onClick={() => openModal(`${pkg.name} - ${pkg.priceText}`)}
+                className="w-full bg-gray-800 hover:bg-teal-600 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group"
+              >
                 Book Now
                 <svg
                   className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"

@@ -7,25 +7,10 @@ export default function HeroSection() {
 
   const slides = [
     {
-      title: 'COLD PLUNGE',
-      subtitle: 'Therapy Now at Ban Sabai',
-      location: 'Balewadi',
-      description: 'The ultimate recovery boost for athletes & sports enthusiasts.',
-      benefits: [
-        'Burn Fat',
-        'Fast Recovery',
-        'Sleep Better',
-        'Sharpen Focus',
-        'Boost Mood',
-        'Strengthen Immunity',
-      ],
-      image: '/images/hero-pool.jpg',
-    },
-    {
       title: 'WELLNESS',
       subtitle: 'Experience Pure Relaxation',
-      location: 'NIBM Road',
-      description: 'Discover tranquility and rejuvenation at our premium spa.',
+      location: 'Baramati',
+      description: 'Discover tranquility and rejuvenation at Eva Family Spa.',
       benefits: [
         'Deep Tissue Massage',
         'Aromatherapy',
@@ -34,7 +19,67 @@ export default function HeroSection() {
         'Steam & Sauna',
         'Reflexology',
       ],
-      image: '/images/hero-spa.jpg',
+      image: '/images/hero1.jpg',
+    },
+    {
+      title: 'LUXURY SPA',
+      subtitle: 'Premium Treatments',
+      location: 'Baramati',
+      description: 'Indulge in world-class spa services and holistic wellness.',
+      benefits: [
+        'Hot Stone Therapy',
+        'Thai Massage',
+        'Herbal Treatments',
+        'Body Wraps',
+        'Couples Packages',
+        'Private Rooms',
+      ],
+      image: '/images/hero2.jpg',
+    },
+    {
+      title: 'REJUVENATION',
+      subtitle: 'Restore Your Balance',
+      location: 'Near KFC & Pizza Hut',
+      description: 'Experience complete mind and body renewal with our signature rituals.',
+      benefits: [
+        'Stress Relief',
+        'Pain Management',
+        'Energy Boost',
+        'Skin Renewal',
+        'Mental Clarity',
+        'Immune Support',
+      ],
+      image: '/images/hero3.jpg',
+    },
+    {
+      title: 'BEAUTY & CARE',
+      subtitle: 'Enhance Your Glow',
+      location: 'Baramati 413102',
+      description: 'Premium facial treatments and beauty services for radiant skin.',
+      benefits: [
+        'Anti-Aging Facials',
+        'Fruit Facials',
+        'Manicure & Pedicure',
+        'Hair Spa',
+        'Waxing Services',
+        'Bridal Packages',
+      ],
+      image: '/images/hero4.jpg',
+    },
+    {
+      title: 'FAMILY SPA',
+      subtitle: 'Relaxation for Everyone',
+      location: 'Eva Family Spa',
+      description: 'A perfect destination for family wellness and bonding.',
+      benefits: [
+        'Family Packages',
+        'Kids Friendly',
+        'Group Discounts',
+        'Special Occasions',
+        'Gift Vouchers',
+        'Customized Services',
+      ],
+      image: '/images/hero5.jpg',
     },
   ];
 
@@ -58,7 +103,11 @@ export default function HeroSection() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-${
-                index === 0 ? '1571902943202-507ec2618e8f' : '1544161515-4ab6ce6db874'
+                index === 0 ? '1544161515-4ab6ce6db874' : 
+                index === 1 ? '1540555700478-4be289fbecef' :
+                index === 2 ? '1571902943202-507ec2618e8f' :
+                index === 3 ? '1600334089648-b0d9d3028eb2' :
+                '1596178060671-7a80bc2e692c'
               }?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
             }}
           />

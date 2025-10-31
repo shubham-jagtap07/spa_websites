@@ -4,9 +4,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
 import ServicesMenu from './ServicesMenu';
+import { useBookingModal } from './BookingModalProvider';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { openModal } = useBookingModal();
 
   const navLinks = [
     { name: 'Home', href: '#home' },
@@ -25,26 +27,29 @@ export default function Header() {
       <div className="bg-gray-900 text-white py-2 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
-            <a href="tel:+918390067667" className="flex items-center space-x-2 hover:text-teal-400 transition">
+            <a href="tel:+919604291428" className="flex items-center space-x-2 hover:text-teal-400 transition">
               <FaPhone className="text-teal-400" />
-              <span className="hidden md:inline">NIBM - +91 83900 67667</span>
+              <span className="hidden md:inline">+91 96042 91428</span>
             </a>
-            <a href="mailto:info@bansabaiwellnessspa.com" className="flex items-center space-x-2 hover:text-teal-400 transition">
+            <a href="mailto:evafamilyspa@gmail.com" className="flex items-center space-x-2 hover:text-teal-400 transition">
               <FaEnvelope className="text-teal-400" />
-              <span className="hidden md:inline">info@bansabaiwellnessspa.com</span>
+              <span className="hidden md:inline">evafamilyspa@gmail.com</span>
             </a>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
+            <a href="https://wa.me/919604291428" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
               <FaWhatsapp size={20} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
+            <a href="https://www.facebook.com/profile.php?id=61571141206103" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
               <FaFacebook size={20} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
+            <a href="https://www.instagram.com/eva_family_relaxation_spa_" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
               <FaInstagram size={20} />
             </a>
-            <button className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-1 rounded-full text-sm font-medium transition">
+            <button 
+              onClick={() => openModal()}
+              className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-1 rounded-full text-sm font-medium transition"
+            >
               Schedule Appointment
             </button>
           </div>
@@ -58,13 +63,11 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3">
               <div className="text-teal-600">
-                <svg className="w-12 h-12" viewBox="0 0 100 100" fill="currentColor">
-                  <path d="M50 10 L60 40 L90 40 L65 60 L75 90 L50 70 L25 90 L35 60 L10 40 L40 40 Z" />
-                </svg>
+                <img src="/images/logo.png" alt="Eva Family Relaxation Spa" className="w-16 h-16 object-contain" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-teal-600">BAN SABAI</h1>
-                <p className="text-xs text-teal-500 tracking-wider">WELLNESS SPA</p>
+                <h1 className="text-xl font-bold text-teal-600">EVA FAMILY</h1>
+                <p className="text-xs text-teal-500 tracking-wider">RELAXATION SPA</p>
               </div>
             </Link>
 

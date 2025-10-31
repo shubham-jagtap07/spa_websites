@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Header from './Header';
 import Footer from './Footer';
+import { useBookingModal } from './BookingModalProvider';
 
 interface ServiceTemplateProps {
   title: string;
@@ -23,6 +24,7 @@ export default function ServiceTemplate({
   image,
   includes,
 }: ServiceTemplateProps) {
+  const { openModal } = useBookingModal();
   return (
     <div className="min-h-screen">
       <Header />
@@ -100,11 +102,17 @@ export default function ServiceTemplate({
                 <p className="text-sm text-gray-400 mt-2">*Excluding GST</p>
               </div>
 
-              <button className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 mb-4">
+              <button 
+                onClick={() => openModal(`${title} - ${price}`)}
+                className="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 mb-4"
+              >
                 Book Now
               </button>
 
-              <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-4 px-6 rounded-lg transition-all duration-300">
+              <button 
+                onClick={() => openModal(title)}
+                className="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-4 px-6 rounded-lg transition-all duration-300"
+              >
                 Contact for Details
               </button>
 
@@ -113,14 +121,14 @@ export default function ServiceTemplate({
                 <div className="space-y-3 text-gray-600">
                   <p className="flex items-center space-x-2">
                     <span>📞</span>
-                    <a href="tel:+918390067667" className="hover:text-teal-600">
-                      +91 83900 67667
+                    <a href="tel:+919604291428" className="hover:text-teal-600">
+                      +91 96042 91428
                     </a>
                   </p>
                   <p className="flex items-center space-x-2">
                     <span>✉️</span>
-                    <a href="mailto:info@bansabaiwellnessspa.com" className="hover:text-teal-600">
-                      info@bansabaiwellnessspa.com
+                    <a href="mailto:evafamilyspa@gmail.com" className="hover:text-teal-600">
+                      evafamilyspa@gmail.com
                     </a>
                   </p>
                 </div>
@@ -132,7 +140,7 @@ export default function ServiceTemplate({
         {/* Additional Info Section */}
         <div className="mt-20 bg-teal-50 rounded-2xl p-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-            Why Choose Ban Sabai?
+            Why Choose Eva Family Relaxation Spa?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
