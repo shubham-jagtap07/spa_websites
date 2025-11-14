@@ -9,7 +9,7 @@ export default function ServicesMenu() {
   const services = [
     { name: 'Instant Rejuvenation', href: '/services/instant-rejuvenation' },
     { name: 'Premium Scrub', href: '/services/premium-scrub' },
-    { name: 'Ban Sabai Wellness Recovery', href: '/services/wellness-recovery' },
+    { name: 'EVA FAMILY Wellness Recovery', href: '/services/wellness-recovery' },
     { name: 'Tropical Scrubs', href: '/services/tropical-scrubs' },
     { name: 'Manicure', href: '/services/manicure' },
     { name: 'Pedicure', href: '/services/pedicure' },
@@ -17,7 +17,7 @@ export default function ServicesMenu() {
     { name: 'Wraps', href: '/services/wraps' },
     { name: 'Facials', href: '/services/facials' },
     { name: 'Fruit Facials', href: '/services/fruit-facials' },
-    { name: 'Ban Sabai Rituals', href: '/services/ban-sabai-rituals' },
+    { name: 'EVA FAMILY', href: '/services/ban-sabai-rituals' },
   ];
 
   return (

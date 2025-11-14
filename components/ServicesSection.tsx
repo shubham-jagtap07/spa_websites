@@ -1,91 +1,76 @@
 'use client';
 
 import { useBookingModal } from './BookingModalProvider';
+import Image from 'next/image';
 
 export default function ServicesSection() {
   const { openModal } = useBookingModal();
-  const packages = [
-    {
-      category: 'Ban Sabai Rituals',
-      name: 'Go Deep Sleep',
-      duration: '2 Hrs',
-      description: 'Perfect for those who struggle with sleep uncertainty, Gym / Sports / Corporate professionals',
-      priceText: 'Solo ₹3999 / Couple ₹7699',
-      gst: '(*Excluding GST)',
-    },
-    {
-      category: 'Ban Sabai Rituals',
-      name: 'Fusuion Signature Treatment',
-      duration: '2.30 Hrs',
-      description: 'Perfect for those who struggle with sleep uncertainty, Gym / Sports / Corporate professionals',
-      priceText: 'Solo ₹5499 / Couple ₹9999',
-      gst: '(*Excluding GST)',
-    },
-    {
-      category: 'Ban Sabai Rituals',
-      name: 'Ban Sabai Recharge',
-      duration: '2.30 Hrs',
-      description: 'Detan Wrap: 30 Mins / Warm Oil Potli Massage: 60 Mins / Choice Of Facial: 60 Mins',
-      priceText: 'Solo ₹5899 / Couple ₹10,599',
-      gst: '(*Excluding GST)',
-    },
-    {
-      category: 'Ban Sabai Combos',
-      name: 'Sweet Sixteen',
-      duration: '3 Hrs',
-      description: 'Choice of Massage: 60 Mins / Oil Head Massage: 20 Mins / Choice Of Scrub: 30 Mins / Facial: 60 Mins / Steam Bath: 10 Mins',
-      priceText: 'Solo ₹6499 / Couple ₹12,399',
-      gst: '(*Excluding GST)',
-    },
-    {
-      category: 'Ban Sabai Combos',
-      name: 'Mini Rejuvenation (Classic)',
-      duration: '120 Mins',
-      description: '1. Choose Any One 90 Mins Classic Massage: Balinese / Swedish / Sports / Thai Dry / Aroma Therapy / Deep Tissue. 2. Choose Any One 30 Mins Body Scrub',
-      priceText: 'Solo ₹3999 / Couple ₹7699',
-      gst: '(*Excluding GST)',
-    },
-    {
-      category: 'Ban Sabai Combos',
-      name: 'Mini Rejuvenation (Exclusive)',
-      duration: '120 Mins',
-      description: '1. Choose Any One 90 Mins Classic Massage: Kansa Wand Detoxe / Hot Stone / Warm Bamboo / Herbal Potli. 2. Choose Any One 30 Mins Body Scrub',
-      priceText: 'Solo ₹5299 / Couple ₹9999',
-      gst: '(*Excluding GST)',
-    },
-    {
-      category: 'Classic Massage',
-      name: 'Deep Tissue Massage',
-      duration: '60 / 90 / 120 Mins',
-      description: '1. Deep Tissue Massage (Strong Pressure). 2. Balinese Massage (Medium to Strong Pressure). 3. Swedish Massage (Medium Pressure). 4. Aroma Oil Massage (Light Pressure)',
-      priceText: '60 Mins ₹3000 / 90 Mins ₹4500 / 120 Mins ₹6000',
-      gst: '(*Excluding GST)',
-    },
-    {
-      category: 'Exclusive Massage',
-      name: 'Kansa Wand Massage',
-      duration: '90 / 120 / 150 Mins',
-      description: '1. Kansa Wand Massage (Medium to Strong Pressure). 2. Warm Bamboo Massage (Strong Pressure). 3. Hot Stone Massage (Medium to Strong Pressure). 4. Herbal Potli Massage (Medium to Strong Pressure)',
-      priceText: '90 Mins ₹5000 / 120 Mins ₹5500 / 150 Mins ₹6000',
-      gst: '(*Excluding GST)',
-    },
-    {
-      category: 'Ban Sabai Special Massage',
-      name: 'Thai / Dry / Sports Massage',
-      duration: '60 / 90 / 120 Mins',
-      description: '1. Thai / Dry / Sports Massage (Strong Pressure). 2. Shea Butter Massage (Intense Pressure)',
-      priceText: '60 Mins ₹2500 / 90 Mins ₹3500 / 120 Mins ₹4000',
-      gst: '(*Excluding GST)',
-    },
-    {
-      category: 'Ban Sabai Special Massage',
-      name: 'Four Hand Massage',
-      duration: '60 / 90 / 120 Mins',
-      description: '1. Four Hand Massage (Medium Pressure). 2. Couple Massage (Medium / Strong Pressure)',
-      priceText: '60 Mins ₹5000 / 90 Mins ₹7000 / 120 Mins ₹9000',
-      gst: '(*Excluding GST)',
-    },
-  ];
+ const packages = [
+  {
+    category: 'EVA FAMILY',
+    name: 'Go Deep Sleep',
+    duration: '2 Hrs',
+    description: 'Perfect for those who struggle with sleep uncertainty, Gym / Sports / Corporate professionals',
+    priceText: 'Solo ₹1299',
+    gst: '(*Excluding GST)',
+    image: '/spa/WhatsApp Image 2025-11-03 at 10.54.40 PM.jpeg',
+  },
+  {
+    category: 'EVA FAMILY Combos',
+    name: 'Sweet Sixteen',
+    duration: '3 Hrs',
+    description: 'Choice of Massage: 60 Mins / Oil Head Massage: 20 Mins / Choice Of Scrub: 30 Mins / Facial: 60 Mins / Steam Bath: 10 Mins',
+    priceText: 'Full Body Waxing ₹2599 / Hot Stone massage ₹1799',
+    gst: '(*Excluding GST)',
+    image: '/spa/WhatsApp Image 2025-11-03 at 10.54.39 PM.jpeg',
+  },
+  {
+    category: 'EVA FAMILY Combos',
+    name: 'Mini Rejuvenation (Classic)',
+    duration: '120 Mins',
+    description: '1. Choose Any One 90 Mins Classic Massage: Balinese / Swedish / Sports / Thai Dry / Aroma Therapy / Deep Tissue. 2. Choose Any One 30 Mins Body Scrub',
+    priceText: '90 min ₹2499',
+    gst: '(*Excluding GST)',
+    image: '/spa/WhatsApp Image 2025-11-03 at 10.54.40 PM (2).jpeg',
+  },
+  {
+    category: 'EVA FAMILY Special Massage',
+    name: 'Thai / Dry / Sports Massage',
+    duration: '45 / 60 / 90 Mins',
+    description: '1. Thai / Dry / Sports Massage (Strong Pressure). 2. Shea Butter Massage (Intense Pressure)',
+    priceText: ' 45 Mins ₹1399 / 60 Mins ₹1599 / 90 Mins ₹2299 /',
+    gst: '(*Excluding GST)',
+    image: '/spa/WhatsApp Image 2025-11-03 at 10.54.40 PM (1).jpeg',
+  },
+  
+  {
+    category: 'Membership Plan',
+    name: 'Diamond',
+    duration: 'Any 60 min',
+    description: '15 Massages of your choice + 5 Body Scrub Free (15 min each)',
+    priceText: '₹15750',
+    gst: '(*Excluding GST)',
+    image: '/spa/WhatsApp Image 2025-11-03 at 10.54.39 PM (1).jpeg',
+  },
+  {
+    category: 'Membership Plan',
+    name: 'Gold',
+    duration: 'Any 60 min',
+    description: '10 Massages of your choice + 3 Body Scrub Free (15 min each)',
+    priceText: '₹11500',
+    gst: '(*Excluding GST)',
+    image: '/spa/WhatsApp Image 2025-11-03 at 10.54.39 PM (1).jpeg',
+  },
+  {
+    category: 'Membership Plan',
+    name: 'Silver',
+    duration: 'Any 60 min',
+    description: '7 Massages of your choice + 2 Body Scrub Free (15 min each)',
+    priceText: '₹8750',
+    gst: '(*Excluding GST)',
+    image: '/spa/WhatsApp Image 2025-11-03 at 10.54.39 PM (1).jpeg',
+  },
+];
 
   return (
     <section id="services" className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -108,37 +93,51 @@ export default function ServicesSection() {
           {packages.map((pkg, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
             >
-              <div className="mb-6">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">{pkg.category}</h3>
-                <p className="text-teal-600 font-semibold text-lg mb-1">{pkg.name}</p>
-                <p className="text-gray-600 text-sm">Duration: {pkg.duration}</p>
+              {/* Image Section */}
+              <div className="relative w-full h-96 bg-gradient-to-br from-amber-50 to-orange-50">
+                <Image
+                  src={pkg.image}
+                  alt={pkg.name}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
               </div>
 
-              <p className="text-gray-700 mb-6 text-sm leading-relaxed min-h-[80px]">
-                {pkg.description}
-              </p>
+              {/* Content Section */}
+              <div className="p-8">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">{pkg.category}</h3>
+                  <p className="text-teal-600 font-semibold text-lg mb-1">{pkg.name}</p>
+                  <p className="text-gray-600 text-sm">Duration: {pkg.duration}</p>
+                </div>
 
-              <div className="mb-6">
-                <p className="text-2xl font-bold text-teal-600 mb-1">{pkg.priceText}</p>
-                <p className="text-gray-500 text-xs">{pkg.gst}</p>
-              </div>
+                <p className="text-gray-700 mb-6 text-sm leading-relaxed min-h-[80px]">
+                  {pkg.description}
+                </p>
 
-              <button 
-                onClick={() => openModal(`${pkg.name} - ${pkg.priceText}`)}
-                className="w-full bg-gray-800 hover:bg-teal-600 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group"
-              >
-                Book Now
-                <svg
-                  className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                <div className="mb-6">
+                  <p className="text-2xl font-bold text-teal-600 mb-1">{pkg.priceText}</p>
+                  <p className="text-gray-500 text-xs">{pkg.gst}</p>
+                </div>
+
+                <button 
+                  onClick={() => openModal(`${pkg.name} - ${pkg.priceText}`)}
+                  className="w-full bg-gray-800 hover:bg-teal-600 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
+                  Book Now
+                  <svg
+                    className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
             </div>
           ))}
         </div>

@@ -3,7 +3,7 @@ import ServiceTemplate from '@/components/ServiceTemplate';
 export default function BanSabaiRitualsPage() {
   return (
     <ServiceTemplate
-      title="Ban Sabai Rituals"
+      title="EVA FAMILY"
       description="Signature holistic wellness experiences combining ancient Thai traditions"
       benefits={[
         'Complete mind-body-spirit rejuvenation and harmony',
@@ -12,7 +12,7 @@ export default function BanSabaiRitualsPage() {
         'Enhanced energy levels, vitality, and mental clarity',
         'Balances chakras and optimizes energy flow',
         'Comprehensive holistic healing approach',
-        'Premium signature Ban Sabai experience',
+        'Premium signature EVA FAMILY experience',
         'Perfect for chronic stress, sleep disorders, and burnout',
       ]}
       duration="150-180 Minutes"
@@ -20,7 +20,7 @@ export default function BanSabaiRitualsPage() {
       image="/images/services/rituals.jpg"
       includes={[
         'Traditional Thai welcome ritual and wellness consultation',
-        'Choice of signature ritual: Go Deep Sleep, Fusion Signature Treatment, or Ban Sabai Recharge',
+        'Choice of signature ritual: Go Deep Sleep, Fusion Signature Treatment, or EVA FAMILY Recharge',
         'Traditional Thai massage with pressure point therapy',
         'Customized aromatherapy with premium essential oils',
         'Full body exfoliation and herbal treatments',

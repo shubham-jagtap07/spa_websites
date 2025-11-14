@@ -3,7 +3,7 @@ import ServiceTemplate from '@/components/ServiceTemplate';
 export default function WellnessRecoveryPage() {
   return (
     <ServiceTemplate
-      title="Ban Sabai Wellness Recovery"
+      title="EVA FAMILY Wellness Recovery"
       description="Complete healing and recovery for body, mind, and soul"
       benefits={[
         'Accelerates muscle recovery and relieves chronic pain',
